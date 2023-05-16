@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+
+
+import Button from "./Button";
+
+import "./App.css"
+
+function  App()
+{
+
+ var a = ["Ashish","Nishtha","Aman","Sahil","Rohit"]
+ 
+ var elemtns = a.map(item => <h1>{item}</h1>)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {elemtns}
     </div>
-  );
+  )
 }
 
 export default App;
